@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap'); /* Винтажный шрифт */
+
+.profile-card {
+   width: 300px;
+   padding: 20px;
+   margin: 20px;
+   background-color: #3b2f2f;
+   color: #d4af37; /* Золотистый цвет */
+   border: 2px solid #8b4513;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+   font-family: 'IM Fell English SC', serif;
+   text-align: center;
+}
+
+.profile-avatar {
+   width: 100px;
+   border-radius: 50%;
+   border: 2px solid #d4af37;
+   margin-bottom: 15px;
+}
+
+.profile-name {
+   font-size: 1.5em;
+   color: #f0e68c;
+   margin: 10px 0;
+}
+
+.profile-occupation {
+   font-size: 1.1em;
+   color: #c0c0c0;
+}
+
+.profile-hobbies-title {
+   font-size: 1.2em;
+   margin-top: 15px;
+   color: #f0e68c;
+   text-decoration: underline;
+}
+
+.profile-hobbies-list  {
+   list-style-type: none;
+   padding: 0;
+}
+
+.profile-hobbies-list li {
+   margin: 5px 0;
+   color: #d4af37;
+   font-style: italic;
+}
