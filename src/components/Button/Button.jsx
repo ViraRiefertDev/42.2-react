@@ -1,8 +1,7 @@
 import './styles.css';
 
-function Button({buttonName = "Get"}) {
-  /* console.log(props); */
-  return <button className='main-button'>{buttonName}</button>;
+function Button({name, type}) {
+  return <button className='main-button' type={type}>{name}</button>;
 }
 
 export default Button;
