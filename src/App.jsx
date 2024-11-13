@@ -1,21 +1,22 @@
-import './App.css';
-/* import Button from './components/Button/Button';
-import LessonCard from './components/LessonCard/LessonCard'; */
-import ProfileCard from './components/ProfileCard/ProfileCard';
+import "./App.css";
+import Lesson03 from "./lessons/Lesson03/Lesson03";
+
+
+//lesson imports
+/* import Lesson02 from "./lessons/Lesson02/Lesson02"; */
+
+//homework imports
+/* import Homework02 from "./homeworks/Homework02/Homework02"; */
+
+//consultation imports
 
 function App() {
-   return (
-      <div className="App">
-         {/* <LessonCard />
-         <Button />
-         <Button /> */}
-         <div className='cards-container'>
-            <ProfileCard />
-            <ProfileCard />
-            <ProfileCard />
-         </div>
-      </div>
-   );
+  return (
+    <div className="App">
+      {/* <Lesson02 /> */}
+      {/* <Homework02 /> */}
+      <Lesson03 />
+    </div>
+  );
 }
-
 export default App;
