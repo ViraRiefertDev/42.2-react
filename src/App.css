@@ -1,11 +1,10 @@
 .App {
   display: flex;
   flex-direction: column;
-  flex:1;
+  flex: 1;
 }
 
-.cards-container{
-   display: flex;
-   flex-wrap: wrap;
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-
