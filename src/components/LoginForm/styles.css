@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 30px;
   padding: 60px;
-  width: 590px;
+  width:590px;
   border: 1px solid #000;
   border-radius: 4px;
 }
@@ -13,4 +13,10 @@
   font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 400;
+}
+
+.inputs-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
