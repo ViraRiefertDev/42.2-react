@@ -7,38 +7,39 @@ function Feedback() {
   const [dislikesCount, setDislikesCount] = useState(0);
 
   const onLikeClick = () => {
-    setLikesCount((prevValue) => prevValue + 1
-    );
+    setLikesCount((prevValue) => prevValue + 1);
   };
 
-  const onDislikeClick = ()=>{
-    setDislikesCount((prevValue)=> prevValue + 1)
-  }
+  const onDislikeClick = () => {
+    setDislikesCount((prevValue) => prevValue + 1);
+  };
 
-  const onResetResultClick = ()=>{
+  const onResetResultClick = () => {
     setLikesCount(0);
     setDislikesCount(0);
-  }
+  };
   return (
-    <div className="feedback-container">
-    <div className="buttons-container">
-      <div className="button-like-wrapper">
-        <span className="likes-count">{likesCount}</span>
-        <Button onClick={onLikeClick}>
-          👍 <span className="button-label">Like</span>
-        </Button>
+    <div className='feedback-container'>
+      <div className='buttons-container'>
+        <div className='button-like-wrapper'>
+          <span className='likes-count'>{likesCount}</span>
+          <Button onClick={onLikeClick}>
+            👍 <span className='button-label'>Like</span>
+          </Button>
+        </div>
+        <div className='button-dislike-wrapper'>
+          <Button onClick={onDislikeClick} name>
+            👎 <span className='button-label'>Dislike</span>
+          </Button>
+          <span className='dislikes-count'>{dislikesCount}</span>
+        </div>
       </div>
-      <div className="button-dislike-wrapper">
-        <Button onClick={onDislikeClick} name>
-          👎 <span className="button-label">Dislike</span>
-        </Button>
-        <span className="dislikes-count">{dislikesCount}</span>
-      </div>
+      {(likesCount || dislikesCount) > 0 && (
+        <div className='reset-result-wrapper'>
+          <Button onClick={onResetResultClick}>Reset Result</Button>
+        </div>
+      )}
     </div>
-    <div className="reset-result-wrapper">
-      <Button onClick={onResetResultClick}>Reset Result</Button>
-    </div>
-  </div>
   );
 }
 
